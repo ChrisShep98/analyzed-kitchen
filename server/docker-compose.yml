@@ -1,0 +1,28 @@
+services:
+  database:
+    image: postgres:latest
+    container_name: local_pg_container
+    environment:
+      # TODO: add secrets to env vars
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: local_postgres
+    ports:
+      # TODO: add ports to env vars
+      - "5432:5432"
+    restart: always
+    volumes:
+      - ./cache/postgres:/var/lib/postgresql/data
+    # build:
+    #   dockerfile: Dockerfile
+    #   context: ./database
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_kitchen
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgEmail@email.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "4000:80"
+    volumes:
+      - ./cache/pgadmin:/var/lib/pgadmin

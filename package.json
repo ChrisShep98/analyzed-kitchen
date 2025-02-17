@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:server": "cd server && docker-compose up",
+    "inspect:db": "docker inspect $(docker ps -aqf 'name=^local_pg_container$') | grep IPAddress"
   },
   "dependencies": {
     "react": "^19.0.0",
