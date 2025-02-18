@@ -32,6 +32,9 @@ importers:
       bcryptjs:
         specifier: ^3.0.1
         version: 3.0.1
+      class-validator:
+        specifier: ^0.14.1
+        version: 0.14.1
       graphql:
         specifier: ^16.10.0
         version: 16.10.0
@@ -50,12 +53,15 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.17.19)(typescript@5.7.3)
       type-graphql:
         specifier: 2.0.0-rc.2
-        version: 2.0.0-rc.2(graphql-scalars@1.24.1(graphql@16.10.0))(graphql@16.10.0)
+        version: 2.0.0-rc.2(class-validator@0.14.1)(graphql-scalars@1.24.1(graphql@16.10.0))(graphql@16.10.0)
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -813,6 +819,9 @@ packages:
   '@types/serve-static@1.15.7':
     resolution: {integrity: sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw==}
 
+  '@types/validator@13.12.2':
+    resolution: {integrity: sha512-6SlHBzUW8Jhf3liqrGGXyTJSIFe4nqlJ5A5KaMZ2l/vbM3Wh3KSybots/wfWVzNLK4D1NZluDlSQIbIEPx6oyA==}
+
   '@typescript-eslint/eslint-plugin@8.24.1':
     resolution: {integrity: sha512-ll1StnKtBigWIGqvYDVuDmXJHVH4zLVot1yQ4fJtLpL7qacwkxJc1T0bptqw+miBQ/QfUbhl1TcQ4accW5KUyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1030,6 +1039,9 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  class-validator@0.14.1:
+    resolution: {integrity: sha512-2VEG9JICxIqTpoK1eMzZqaV+u/EiwEJkMGzTrZf6sU/fwsnOITVgYJ8yojSy6CaXtO9V0Cc6ZQZ8h8m4UBuLwQ==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -1741,6 +1753,9 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
+  libphonenumber-js@1.11.20:
+    resolution: {integrity: sha512-/ipwAMvtSZRdiQBHqW1qxqeYiBMzncOQLVA+62MWYr7N4m7Q2jqpJ0WgT7zlOEOpyLRSqrMXidbJpC0J77AaKA==}
+
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
@@ -2085,6 +2100,9 @@ packages:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
 
+  reflect-metadata@0.2.2:
+    resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
+
   reflect.getprototypeof@1.0.10:
     resolution: {integrity: sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==}
     engines: {node: '>= 0.4'}
@@ -2417,6 +2435,10 @@ packages:
 
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
+
+  validator@13.12.0:
+    resolution: {integrity: sha512-c1Q0mCiPlgdTVVVIJIrBuxNicYE+t/7oKeI9MWLj3fh/uq2Pxh/3eeWbVZ4OcGW1TUf53At0njHw5SMdA3tmMg==}
+    engines: {node: '>= 0.10'}
 
   value-or-promise@1.0.12:
     resolution: {integrity: sha512-Z6Uz+TYwEqE7ZN50gwn+1LCVo9ZVrpxRPOhOLnncYkY1ZzOYtrX8Fwf/rFktZ8R5mJms6EZf5TqNOMeZmnPq9Q==}
@@ -3233,6 +3255,8 @@ snapshots:
       '@types/node': 20.17.19
       '@types/send': 0.17.4
 
+  '@types/validator@13.12.2': {}
+
   '@typescript-eslint/eslint-plugin@8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.20.1)(typescript@5.7.3))(eslint@9.20.1)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
@@ -3517,6 +3541,12 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  class-validator@0.14.1:
+    dependencies:
+      '@types/validator': 13.12.2
+      libphonenumber-js: 1.11.20
+      validator: 13.12.0
 
   client-only@0.0.1: {}
 
@@ -4397,6 +4427,8 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
+  libphonenumber-js@1.11.20: {}
+
   lines-and-columns@1.2.4: {}
 
   locate-path@6.0.0:
@@ -4706,6 +4738,8 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
 
   react@19.0.0: {}
+
+  reflect-metadata@0.2.2: {}
 
   reflect.getprototypeof@1.0.10:
     dependencies:
@@ -5042,7 +5076,7 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  type-graphql@2.0.0-rc.2(graphql-scalars@1.24.1(graphql@16.10.0))(graphql@16.10.0):
+  type-graphql@2.0.0-rc.2(class-validator@0.14.1)(graphql-scalars@1.24.1(graphql@16.10.0))(graphql@16.10.0):
     dependencies:
       '@graphql-yoga/subscription': 5.0.3
       '@types/node': 20.17.19
@@ -5052,6 +5086,8 @@ snapshots:
       graphql-scalars: 1.24.1(graphql@16.10.0)
       semver: 7.7.1
       tslib: 2.8.1
+    optionalDependencies:
+      class-validator: 0.14.1
 
   type-is@1.6.18:
     dependencies:
@@ -5115,6 +5151,8 @@ snapshots:
   uuid@9.0.1: {}
 
   v8-compile-cache-lib@3.0.1: {}
+
+  validator@13.12.0: {}
 
   value-or-promise@1.0.12: {}
 
