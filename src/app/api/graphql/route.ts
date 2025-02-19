@@ -4,9 +4,10 @@ import { startServerAndCreateNextHandler } from "@as-integrations/next";
 import { NextApiRequest, NextApiResponse } from "next";
 import { buildSchema } from "type-graphql";
 import { RegisterResolver } from "../../../../graphql/resolvers/register";
+import { GetUserByUsernameResolver } from "../../../../graphql/schema/getUser";
 
 const schema = await buildSchema({
-  resolvers: [RegisterResolver],
+  resolvers: [RegisterResolver, GetUserByUsernameResolver],
   validate: false,
 });
 
