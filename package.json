@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts",
     "start:server": "cd server && docker-compose up",
     "inspect:db": "docker inspect $(docker ps -aqf 'name=^local_pg_container$') | grep IPAddress"
   },
@@ -16,6 +17,8 @@
     "@as-integrations/next": "^3.2.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@graphql-codegen/cli": "^5.0.5",
+    "@graphql-codegen/client-preset": "^4.6.3",
     "@mui/material": "^6.4.4",
     "@prisma/client": "^6.3.1",
     "bcryptjs": "^3.0.1",
