@@ -1,1 +1,1 @@
-Stack - Typescript, Next.js, Docker, PostgreSQL, Prsima, GraphQL
+Stack - Typescript, Next.js, Docker, PostgreSQL, Prsima, TypeGraphQL
