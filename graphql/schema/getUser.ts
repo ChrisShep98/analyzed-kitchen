@@ -1,9 +1,7 @@
-import { PrismaClient } from "@prisma/client";
 import { Arg, Query, Resolver } from "type-graphql";
 import { UserResponse } from "./user/getUserResponse";
 import { User } from "./user/user";
-
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/prismaInstance";
 
 @Resolver(UserResponse)
 class GetUserByUsernameResolver {

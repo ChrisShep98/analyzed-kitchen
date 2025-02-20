@@ -1,11 +1,8 @@
 import bcrypt from "bcryptjs";
-import { PrismaClient } from "@prisma/client";
 import { Arg, Mutation, Resolver } from "type-graphql";
 import { RegisterResponse } from "../schema/register/registrationResponse";
 import { UserInput } from "../schema/user/userRegistrationInput";
-import { User } from "../schema/user/user";
-
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/prismaInstance";
 
 @Resolver(RegisterResponse)
 class RegisterResolver {
