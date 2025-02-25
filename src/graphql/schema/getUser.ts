@@ -1,7 +1,7 @@
 import { Arg, Query, Resolver } from "type-graphql";
-import { UserResponse } from "./user/getUserResponse";
-import { User } from "./user/user";
-import { prisma } from "../../prisma/prismaInstance";
+import { UserResponse } from "@/graphql/schema/user/getUserResponse";
+import { User } from "@/graphql/schema/user/user";
+import { prisma } from "@/prisma/prismaInstance";
 
 @Resolver(UserResponse)
 class GetUserByUsernameResolver {

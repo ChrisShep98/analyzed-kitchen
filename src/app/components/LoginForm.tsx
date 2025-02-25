@@ -1,7 +1,7 @@
 import { Box, Button, Stack } from "@mui/material";
-import { signIn } from "../auth";
+import { signIn } from "@/app/auth";
 import Image from "next/image";
-import GoogleIcon from "../../../public/google-icon.svg";
+import GoogleIcon from "images/google-icon.svg";
 
 export default function LoginForm() {
   return (

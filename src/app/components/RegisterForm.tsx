@@ -8,9 +8,8 @@ import {
   Typography,
   Link as MuiLink,
 } from "@mui/material";
-import { useRouter } from "next/navigation";
 import React, { FormEvent, useState } from "react";
-import { REGISTER_MUTATION } from "../../../graphql/client/registerMutation";
+import { REGISTER_MUTATION } from "@/graphql/client/registerMutation";
 
 const RegisterForm = () => {
   const [registerMutation, { data, loading, error }] = useMutation(REGISTER_MUTATION);

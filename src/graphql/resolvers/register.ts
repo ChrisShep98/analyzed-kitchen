@@ -1,8 +1,8 @@
 import bcrypt from "bcryptjs";
 import { Arg, Mutation, Resolver } from "type-graphql";
-import { RegisterResponse } from "../schema/register/registrationResponse";
-import { UserInput } from "../schema/user/userRegistrationInput";
-import { prisma } from "../../prisma/prismaInstance";
+import { RegisterResponse } from "@/graphql/schema/register/registrationResponse";
+import { UserInput } from "@/graphql/schema/user/userRegistrationInput";
+import { prisma } from "@/prisma/prismaInstance";
 
 @Resolver(RegisterResponse)
 class RegisterResolver {

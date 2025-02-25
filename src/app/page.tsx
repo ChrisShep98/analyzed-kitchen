@@ -1,5 +1,5 @@
-import styles from "./page.module.css";
-import LoginForm from "./components/LoginForm";
+import styles from "@/app/page.module.css";
+import LoginForm from "@/app/components/LoginForm";
 
 export default function Home() {
   return (

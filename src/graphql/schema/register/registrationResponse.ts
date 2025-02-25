@@ -1,6 +1,6 @@
-import { PsqlError } from "../../error/psqlError";
-import { Field, ObjectType, ID } from "type-graphql";
-import { User } from "../user/user";
+import { PsqlError } from "@/graphql/error/psqlError";
+import { Field, ObjectType } from "type-graphql";
+import { User } from "@/graphql/schema/user/user";
 
 @ObjectType()
 class RegisterResponse {
