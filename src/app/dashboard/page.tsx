@@ -18,7 +18,7 @@ export default async function Dashboard() {
         height={96}
         width={96}
         quality={100}
-        style={{ borderRadius: "50%" }}
+        className="rounded-full"
       />
       <button
         onClick={async () => {

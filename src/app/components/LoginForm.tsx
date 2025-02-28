@@ -4,16 +4,8 @@ import GoogleIcon from "images/google-icon.svg";
 
 export default function LoginForm() {
   return (
-    <div
-      style={{
-        boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
-        position: "absolute",
-        padding: 24,
-        borderRadius: "30px",
-        backgroundColor: "white",
-      }}
-    >
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+    <div className="p-5 absolute bg-white rounded-2xl">
+      <div className="flex flex-row items-center gap-2">
         <Image src={GoogleIcon} alt="Google Icon" width={50} height={50} />
         <form
           action={async () => {
@@ -21,7 +13,9 @@ export default function LoginForm() {
             await signIn("google", { redirectTo: "/dashboard" });
           }}
         >
-          <button type="submit">Signin with Google</button>
+          <button className="text-zinc-400 hover:cursor-pointer" type="submit">
+            Sign in with Google
+          </button>
         </form>
       </div>
     </div>
