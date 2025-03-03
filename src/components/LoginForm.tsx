@@ -1,6 +1,7 @@
 import { signIn } from "@/app/auth";
 import Image from "next/image";
 import GoogleIcon from "images/google-icon.svg";
+import { Button } from "./ui/button";
 
 export default function LoginForm() {
   return (
@@ -13,9 +14,9 @@ export default function LoginForm() {
             await signIn("google", { redirectTo: "/dashboard" });
           }}
         >
-          <button className="text-zinc-400 hover:cursor-pointer" type="submit">
+          <Button variant={"outline"} type="submit">
             Sign in with Google
-          </button>
+          </Button>
         </form>
       </div>
     </div>
